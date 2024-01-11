@@ -200,17 +200,6 @@
                 script.src = "data/loader.js";
                 document.body.appendChild(script);
             }
-            function detectAdBlock(url) {
-                let adBlockEnabled = false;
-                try {
-                    window.EJS_AdUrl = document.querySelector('iframe[src="'+window.EJS_AdUrl+'"]').src;
-                } catch (e) {
-                    adBlockEnabled = true;
-                }
-                if (adBlockEnabled) {
-                    window.EJS_adBlocked(url);
-                }
-            }
             box.ondragover = () => box.setAttribute("drag", true);
             box.ondragleave = () => box.removeAttribute("drag");
         </script>
