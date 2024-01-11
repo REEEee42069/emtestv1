@@ -1318,13 +1318,6 @@ class EmulatorJS {
             save: qSave,
             load: qLoad
         }
-        addButton("EmulatorJS v"+this.ejs_version, false, () => {
-            hideMenu();
-            const body = this.createPopup("EmulatorJS", {
-                "Close": () => {
-                    this.closePopup();
-                }
-            });
             
             const menu = this.createElement('div');
             menu.classList.add("ejs_list_selector");
@@ -1362,16 +1355,11 @@ class EmulatorJS {
             home.appendChild(this.createElement("br"));
             home.appendChild(this.createElement("br"));
             const gh = this.createElement("a");
-            gh.href = "https://github.com/EmulatorJS/EmulatorJS";
+            gh.href = "https://github.com/REEEee42069/gamedrive/tree/main";
             gh.target = "_blank";
             gh.innerText = this.localization("View on GitHub");
             home.appendChild(gh);
             home.appendChild(this.createElement("br"));
-            const dc = this.createElement("a");
-            dc.href = "https://discord.gg/6akryGkETU";
-            dc.target = "_blank";
-            dc.innerText = this.localization("Join the discord");
-            home.appendChild(dc);
             home.appendChild(this.createElement("br"));
             menu.appendChild(parent);
             body.appendChild(menu);
