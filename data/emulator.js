@@ -1357,7 +1357,7 @@ class EmulatorJS {
             body.appendChild(license);
             body.appendChild(retroarch);
             
-            let current = home;
+             let current = home;
             home.innerText = "EmulatorJS v"+this.ejs_version;
             home.appendChild(this.createElement("br"));
             home.appendChild(this.createElement("br"));
