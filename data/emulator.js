@@ -1362,10 +1362,16 @@ class EmulatorJS {
             home.appendChild(this.createElement("br"));
             home.appendChild(this.createElement("br"));
             const gh = this.createElement("a");
-            gh.href = "https://github.com/REEEee42069/GameMeet";
+            gh.href = "https://github.com/REEEee42069/gamedrive";
             gh.target = "_blank";
             gh.innerText = this.localization("View on GitHub");
             home.appendChild(gh);
+            home.appendChild(this.createElement("br"));
+            const dc = this.createElement("a");
+            dc.href = "https://www.discordapp.com/users/658366195866796064";
+            dc.target = "_blank";
+            dc.innerText = this.localization("Add me on Discord");
+            home.appendChild(dc);
             home.appendChild(this.createElement("br"));
             menu.appendChild(parent);
             body.appendChild(menu);
